@@ -6,16 +6,6 @@ permalink: /about/contact/
 
 ## Introduction
 
-Welcome to my GitHub! I am a Senior Software Engineer with 5
-
-Sure, here's an updated "About" page for a GitHub repository from the perspective of a Senior Software Engineer with 5 years of experience:
-
----
-
-# About Me
-
-## Introduction
-
 Welcome to my GitHub! I am a Senior Software Engineer with 5 years of experience in developing web applications. My expertise spans various technologies, including PHP, Magento 2, HTML, CSS, JavaScript, Jira, GitHub, and Elasticsearch. 
 
 ## Experience
