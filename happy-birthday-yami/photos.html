@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memories from the Last Year</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+</head><body>
     <div class="container">
         <h1>Memories from the Last Year</h1>
-        <div class="grid">
-            <div class="grid-item"><img src="photos/photo1.jpg" alt="Photo 1"></div>
-            <div class="grid-item"><img src="photos/photo2.jpg" alt="Photo 2"></div>
-            <div class="grid-item"><img src="photos/photo3.jpg" alt="Photo 3"></div>
-            <div class="grid-item"><img src="photos/photo4.jpg" alt="Photo 4"></div>
-            <div class="grid-item"><img src="photos/photo5.jpg" alt="Photo 5"></div>
-            <div class="grid-item"><img src="photos/photo6.jpg" alt="Photo 6"></div>
-            <div class="grid-item"><img src="photos/photo7.jpg" alt="Photo 7"></div>
-            <div class="grid-item"><img src="photos/photo8.jpg" alt="Photo 8"></div>
-            <div class="grid-item"><img src="photos/photo9.jpg" alt="Photo 9"></div>
-            <div class="grid-item"><img src="photos/photo10.jpg" alt="Photo 10"></div>
-        </div>
+        <div class="grid" id="photoGrid"></div>
         <a href="index.html" class="button">Back to Birthday Page</a>
     </div>
-</body>
-</html>
+    <script>
+        const grid = document.getElementById('photoGrid');
+        for (let i = 1; i <= 90; i++) {
+            const gridItem = document.createElement('div');
+            gridItem.className = 'grid-item';
+            const img = document.createElement('img');
+            img.src = `photos/photo${i}.jpg`;
+            img.alt = `Photo ${i}`;
+            gridItem.appendChild(img);
+            grid.appendChild(gridItem);
+        }
+    </script>
+</body></html>
+

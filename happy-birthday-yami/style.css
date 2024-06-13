@@ -54,19 +54,20 @@ h2 {
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
 }
 
 .grid-item {
-    width: calc(33.333% - 10px);
-    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .grid-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
+
