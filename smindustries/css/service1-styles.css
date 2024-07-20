@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: navy;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul .submenu {
+  display: none;
+  position: absolute;
+  background-color: navy;
+  padding: 1rem;
+  list-style: none;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.service-hero {
+  background-image: url('../images/hero.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.service-details {
+  padding: 2rem 0;
+}
+
+.service-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-description, .service-gallery {
+  flex: 1;
+  padding: 1rem;
+}
+
+.service-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.service-gallery .gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.recent-work {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+}
+
+.recent-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.work-item {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.reviews {
+  padding: 2rem 0;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.review-item {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-media {
+  margin-top: 1rem;
+}
+
+footer .social-media a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}

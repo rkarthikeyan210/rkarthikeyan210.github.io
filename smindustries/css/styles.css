@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: navy;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul .submenu {
+  display: none;
+  position: absolute;
+  background-color: navy;
+  padding: 1rem;
+  list-style: none;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.hero {
+  background-image: url('../images/hero.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.about, .services, .recent-work, .news, .contact-content, .about-content, .service-details {
+  padding: 2rem 0;
+}
+
+.services-grid, .recent-work-grid, .news-grid, .values-grid, .team-grid, .service-gallery .gallery-grid, .reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.service-item, .value-item, .work-item, .review-item, .contact-form, .contact-details {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.contact-form h2, .contact-details h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-media {
+  margin-top: 1rem;
+}
+
+footer .social-media a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.about-hero, .contact-hero, .service-hero {
+  background-image: url('../images/hero.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.about-intro, .about-values, .about-team, .about-history, .service-info {
+  margin-bottom: 2rem;
+}
+
+.service-description, .service-gallery {
+  flex: 1;
+  padding: 1rem;
+}
+
+.service-gallery .gallery-grid img, .team-member img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.recent-work, .about-history {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+}
+
+
+.success-message {
+  display: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  border: 1px solid #b2ebf2;
+  border-radius: 4px;
+  color: #00796b;
+  text-align: center;
+}
+
+.success-message.success {
+  background-color: #c8e6c9;
+  border-color: #81c784;
+  color: #388e3c; 
+  display: block;
+}
+
+.success-message.error {
+  background-color: #fdd835;
+  border-color: #fbc02d;
+  color: #f57f17;
+  display: block;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero, .about-hero, .contact-hero, .service-hero {
+    padding: 3rem 0;
+  }
+
+  .services-grid, .recent-work-grid, .news-grid, .values-grid, .team-grid, .service-gallery .gallery-grid, .reviews-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hero, .about-hero, .contact-hero, .service-hero {
+    padding: 2rem 0;
+  }
+
+  .services-grid, .recent-work-grid, .news-grid, .values-grid, .team-grid, .service-gallery .gallery-grid, .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item, .value-item, .work-item, .review-item, .contact-form, .contact-details {
+    padding: 0.5rem;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+  }
+
+  footer .social-media a {
+    margin: 0.5rem;
+  }
+}
